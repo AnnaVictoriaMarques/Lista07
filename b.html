@@ -1,0 +1,103 @@
+<html lang="pt br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>Cadastro de clientes</h1>
+
+        <p style="color: red;">Todos os campos de preenchimentos obrigatório</p>
+
+        <fieldset>
+        <legend>Dados Pessoais:</legend>      
+        <label for="nome">Name:</label>
+        <input id="nome" type="text" required> <br><br>
+
+        Sexo:</label><br>
+        <input id="Masculino" type="radio" name="sexo" required>
+        <label for="Masculino">Masculino</label>
+        <input id="Feminino" type="radio" name="sexo" required>
+        <label for="Feminino">Feminino</label>
+        <br><br>
+
+        <label for="date">Data de Nascimento</label> <br>
+        <input id="date" type="date" required>
+        </fieldset>
+        
+       <fieldset>
+
+        <legend>Informação de Contato</legend>
+        <label for="email"> E-mail:</label><br>
+        <input id="email" type="email" required><br><br>
+
+        <label for="telefone"> Telefone/celular:</label><br>
+        <input id="telefone" name="telefone" type="tel" pattern="[0-9]{9}" required max="9" placeholder="Apenas número(Max 9)"><br><br>
+
+       <label for="site">site:</label><br>
+        <input id="site" type="url" required><br><br>
+
+       </fieldset>
+
+       <fieldset>
+
+        <legend>Localização</legend>
+
+       <label for="Endereço"> Endereço:</label> <br><br>
+        <input id="Endereço" type="text" required> <br><br>
+
+       <label for="número">Número:</label> <br>
+        <input id="número" type="number" placeholder="Valor entre 1 a 9999" style="width: 175px;"> <br><br>
+
+       <label for="Cidade">Cidade:</label> <br>
+       <input id="Cidade" type="text" required><br><br>
+
+        </select>
+
+       Estado:<br>
+        <select>
+            
+            <option>Selecione</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+
+        </select>
+    
+
+       </fieldset>
+
+       <input type="button" value="cadastrar">
+       <input type="reset" value="limpar" > 
+
+
+    </form>
+</body>
+
+</html>
